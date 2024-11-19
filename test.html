@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>旅游文章</title>
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/test.css">
+
+  <!-- jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- DataTables CSS -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+     <script src="https://cdn.jsdelivr.net/npm/echarts@5.3.0/dist/echarts.min.js"></script>
+</head>
+
+<body>
+    <!-- menu -->
+    <nav>
+        <div class="logo">
+            <img src="../image/kappframework-QqjNLN(1)(1).png" alt="Logo Image">
+        </div>
+        <div class="hamburger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="../index.html" style="color: black;">网站首页</a></li>
+            <li><a href="../layout/map.html" style="color: black;">生态园地图</a></li>
+            <li><a href="../layout/test.html" style="color: black;">生态园数据平台</a></li>
+            <li><a href="../layout/about.html" style="color: black;">欢迎加入</a></li>
+       </ul>
+    </nav>
+    <div id="aboutbj"></div>
+
+    <!-- 文章 -->
+    <div class="post news top">
+        <div class="PostNews">
+            <ul>
+                <li style="visibility: visible; animation-name: fadeInUp;">
+                    <div class="imgBox">
+                        <a href="https://epaper.xkb.com.cn/view/1192095"> <img src="../image/南沙.jpg" style="width: 100%;"> </a>
+                    </div>
+                    <div class="imgText">
+                        <h4><a href="https://epaper.xkb.com.cn/view/1192095">南沙农业园</a></h4>
+                        <p> 一条520米长的“神奇绿廊”，果、藤、瓜、花织就缤纷彩带，与绿廊一河之隔的家庭都市小菜园，一园一门等着市民来“领钥匙”，绿廊附近300多亩油菜花海预计春节期间绽放……“让城市留下记忆，让人们记住乡愁。”在广州市南沙区明珠湾区，规划面积超过万亩的南沙明珠现代都市农业实验园（下称“明珠农业园”），以其出众的颜值和丰富的内涵，成为广大市民游客打卡的都市田园新“网红”。</p>
+                        <p class="time"> 2021-11-12 </p>
+                       <a href="https://epaper.xkb.com.cn/view/1192095"><img src="../image/right.svg" class="right"></a>
+                    </div>
+                </li>
+                <li style="visibility: visible; animation-name: fadeInUp;">
+                    <div class="imgBox">
+                        <a href="https://www.163.com/dy/article/H87VRHCC0514BKS1.html"> <img src="../image/研学.jpg" style="width: 100%;"> </a>
+                    </div>
+                    <div class="imgText">
+                        <h4><a href="https://www.163.com/dy/article/H87VRHCC0514BKS1.html">农耕研学</a></h4>
+                        <p>  “锄禾日当午，汗滴禾下土，谁知盘中餐，粒粒皆辛苦。”《悯农》这首诗写出了农民辛苦劳作的情景，但是书中的情景不亲自体验一下又怎能知道种田的艰辛呢？</p>
+                        <p class="time"> 2022-05-25 </p>
+                       <a href="https://www.163.com/dy/article/H87VRHCC0514BKS1.html"><img src="../image/right.svg" class="right"></a>
+                    </div>
+                </li>
+                <li style="visibility: visible; animation-name: fadeInUp;">
+                    <div class="imgBox">
+                        <a href="https://zhuanlan.zhihu.com/p/274280455"> <img src="https://picx.zhimg.com/70/v2-61a49833332f1214f80a210cb2c6ee46_1440w.avis?source=172ae18b&biz_tag=Post" style="width: 100%;"> </a>
+                    </div>
+                    <div class="imgText">
+                        <h4><a href="https://zhuanlan.zhihu.com/p/274280455">农事体验</a></h4>
+                        <p>农事挑战亲体验，感受生活归田园、你的孩子有多久没看到过农田了？你的孩子有多久没走进大自然感受大自然啦？</p>
+                        <p class="time"> 2020-11-05 </p>
+                        <a href="https://zhuanlan.zhihu.com/p/274280455"><img src="../image/right.svg" class="right"></a>
+                    </div>
+                </li>
+                <li style="visibility: visible; animation-name: fadeInUp;">
+                    <div class="imgBox">
+                        <a href="https://www.163.com/dy/article/IBLHF54105118U1Q.html"> <img src="https://nimg.ws.126.net/?url=http%3A%2F%2Fdingyue.ws.126.net%2F2023%2F0808%2F21a7aa30j00rz2x0a004wd200u000k0g00it00cj.jpg&thumbnail=660x2147483647&quality=80&type=jpg" style="width: 100%;"> </a>
+                    </div>
+                    <div class="imgText">
+                        <h4><a href="https://www.163.com/dy/article/IBLHF54105118U1Q.html">产业园发展</a></h4>
+                        <p> 随着政策推进，农业产业园的地位与作用将会更加凸显，践行中国农业强国梦想。但是，我们也要看到农业产业园的问题及现状。</p>
+                        <p class="time"> 2023-08-08 </p>
+                        <a href="https://www.163.com/dy/article/IBLHF54105118U1Q.html"><img src="../image/right.svg" class="right"></a>
+                    </div>
+                </li>
+                <div class="PostNews">
+                    <li style="visibility: visible; animation-name: fadeInUp;">
+                        <div class="imgBox">
+                            <a href="https://news.qq.com/rain/a/20221008A08UY100"> <img src="http://inews.gtimg.com/newsapp_bt/0/15316893708/641" style="width: 100%;"> </a>
+                        </div>
+                        <div class="imgText">
+                            <h4><a href="https://news.qq.com/rain/a/20221008A08UY100">农耕＋研学</a></h4>
+                            <p> 党的十九大在脱贫攻坚的基础上，提出了乡村振兴战略，全面擘画了中国乡村发展的美好未来，把促进农业农村发展提上了前所未有的高度。“全面推进乡村振兴，加快农业农村现代化”也成为广东今后五年深化落实的九项重点工作任务之一。</p>
+                            <p class="time"> 2022-10-08 </p>
+                            <a href="https://news.qq.com/rain/a/20221008A08UY100"><img src="../image/right.svg" class="right"></a>
+                        </div>
+                    </li>
+                    <li style="visibility: visible; animation-name: fadeInUp;">
+                        <div class="imgBox">
+                            <a href="https://www.gov.cn/yaowen/2023-05/07/content_5754498.htm#1"> <img src="https://www.gov.cn/yaowen/2023-05/07/W020230509318414212043.jpg" style="width: 100%;"> </a>
+                        </div>
+                        <div class="imgText">
+                            <h4><a href="https://www.gov.cn/yaowen/2023-05/07/content_5754498.htm#1">观光农业</a></h4>
+                            <p> 江苏扬州：观光农业助推乡村振兴</p>
+                            <p class="time"> 2023-05-07 </p>
+                            <a href="https://www.gov.cn/yaowen/2023-05/07/content_5754498.htm#1"><img src="../image/right.svg" class="right"></a>
+                        </div>
+                    </li>
+                    <li style="visibility: visible; animation-name: fadeInUp;">
+                        <div class="imgBox loading">
+                            <a href="https://www.sohu.com/a/287048265_703575"> <img src="http://5b0988e595225.cdn.sohucs.com/images/20190106/cd94168e56674ac09dc368abf7ea0023.jpeg" style="width: 100%;"> </a>
+                        </div>
+                        <div class="imgText">
+                            <h4><a href="https://www.sohu.com/a/287048265_703575">休闲农园起名</a></h4>
+                            <p> 如何给自己新建的休闲农园起名，是困扰从业者的一个难题，的确，起名是做休闲农业项目的第一步，毕竟农园的名字是关乎到能否快速打开局面，占据消费者心里的关健。取得一个好的名字等于成功了一半，一个好名字便是一个好风水！</p>
+                            <p class="time"> 2019-01-06 </p>
+                            <a href="https://www.sohu.com/a/287048265_703575"><img src="../image/right.svg" class="right"></a>
+                        </div>
+                    </li>
+                    <li style="visibility: visible; animation-name: fadeInUp;">
+                        <div class="imgBox">
+                            <a href="https://www.sohu.com/a/430396194_533924"> <img src="http://p6.itc.cn/images01/20201108/8b841193fd5a4d6c9ea53c5451cf9904.png" style="width: 100%;"> </a>
+                        </div>
+                        <div class="imgText">
+                            <h4><a href="https://www.sohu.com/a/430396194_533924">分析报告</a></h4>
+                            <p> 中国的乡村旅游体系已经逐步完善。随着疫情对生产生活秩序影响的逐步减弱，城乡居民被抑制的需求将持续释放，乡村旅游再度兴起。数据显示，2020年1-8月，中国休闲农业与乡村旅游接待人数达12.07亿人，休闲农业与乡村旅游收入达到5925亿元。</p>
+                            <p class="time"> 2020-11-08 </p>
+                            <a href="https://www.sohu.com/a/430396194_533924"><img src="../image/right.svg" class="right"></a>
+                        </div>
+                    </li>
+            </ul>
+
+            </div>
+
+        </div>
+
+        <!-- 选择器1 -->
+        <div class="vertical-container">
+          <div class="btn-group">
+            <button type="button" class="btn btn-primary" onclick="selectTable(1)">农产品销售数据</button>
+            <button type="button" class="btn btn-primary" onclick="selectTable(2)">农业资源使用数据</button>
+            <button type="button" class="btn btn-primary" onclick="selectTable(3)">农业科研项目数据</button>
+          </div>
+          <div class="table-wrapper">
+            <table id="data-table" class="table table-striped table-bordered" style="margin-left: -20px;">
+              <tbody id="table-body" >
+              <!-- 这里用 JavaScript 动态填充数据 -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+    <div id="main" ></div>
+
+    </div>
+
+<script>
+  // 数据源
+  var tableData1 = [
+    { book: "小麦", sales: 300 },
+    { book: "玉米", sales: 220 },
+    { book: "大豆", sales: 180 },
+    { book: "水稻", sales: 210 },
+    { book: "马铃薯", sales: 250 },
+    { book: "苹果", sales: 120 },
+    { book: "葡萄", sales: 150 },
+    { book: "梨", sales: 190 },
+    { book: "桃子", sales: 230 },
+    { book: "西瓜", sales: 280 },
+    { book: "番茄", sales: 320 },
+    { book: "黄瓜", sales: 270 },
+    { book: "辣椒", sales: 200 },
+    { book: "茄子", sales: 290 },
+    { book: "菠菜", sales: 180 },
+    { book: "胡萝卜", sales: 210 },
+    { book: "白菜", sales: 280 },
+    { book: "南瓜", sales: 150 },
+    { book: "芹菜", sales: 170 },
+    { book: "大蒜", sales: 240 },
+    { book: "生姜", sales: 260 },
+    { book: "洋葱", sales: 220 },
+    { book: "青椒", sales: 200 },
+    { book: "苦瓜", sales: 180 },
+    { book: "丝瓜", sales: 210 },
+    { book: "冬瓜", sales: 280 },
+    { book: "菜花", sales: 320 },
+    { book: "西兰花", sales: 270 },
+    { book: "生菜", sales: 200 },
+    { book: "菠萝", sales: 290 },
+    { book: "芒果", sales: 180 },
+    { book: "香蕉", sales: 210 }
+];
+
+var tableData2 = [
+    { book: "化肥", sales: 25 },
+    { book: "农药", sales: 18 },
+    { book: "灌溉水", sales: 12 },
+    { book: "有机肥", sales: 15 },
+    { book: "种子", sales: 20 },
+    { book: "农膜", sales: 10 },
+    { book: "机械", sales: 22 },
+    { book: "劳动力", sales: 18 },
+    { book: "土地", sales: 15 },
+    { book: "能源", sales: 12 },
+    { book: "生物肥料", sales: 20 },
+    { book: "生物农药", sales: 15 },
+    { book: "生物刺激剂", sales: 10 },
+    { book: "微生物制剂", sales: 12 },
+    { book: "土壤改良剂", sales: 18 },
+    { book: "温室", sales: 25 },
+    { book: "滴灌系统", sales: 20 },
+    { book: "喷灌系统", sales: 15 },
+    { book: "无人机", sales: 10 },
+    { book: "卫星遥感", sales: 12 },
+    { book: "物联网设备", sales: 18 },
+    { book: "智能传感器", sales: 20 },
+    { book: "大数据分析", sales: 15 },
+    { book: "人工智能", sales: 10 },
+    { book: "区块链", sales: 12 },
+    { book: "云计算", sales: 18 },
+    { book: "边缘计算", sales: 20 },
+    { book: "5G通信", sales: 15 },
+    { book: "太阳能", sales: 10 },
+    { book: "风能", sales: 12 }
+];
+
+var tableData3 = [
+    { book: "作物遗传育种", sales: 15 },
+    { book: "土壤健康评估", sales: 12 },
+    { book: "病虫害防治", sales: 10 },
+    { book: "精准农业技术", sales: 8 },
+    { book: "农业废弃物利用", sales: 7 },
+    { book: "农业生态系统管理", sales: 6 },
+    { book: "农业气象研究", sales: 5 },
+    { book: "农业经济分析", sales: 4 },
+    { book: "农业政策研究", sales: 3 },
+    { book: "农业教育推广", sales: 2 },
+    { book: "农业机械研发", sales: 15 },
+    { book: "农业生物技术", sales: 12 },
+    { book: "农业环境监测", sales: 10 },
+    { book: "农业水资源管理", sales: 8 },
+    { book: "农业信息化建设", sales: 7 },
+    { book: "农业可持续发展", sales: 6 },
+    { book: "农业风险管理", sales: 5 },
+    { book: "农业保险研究", sales: 4 },
+    { book: "农业市场分析", sales: 3 },
+    { book: "农业国际合作", sales: 2 },
+    { book: "农业文化遗产保护", sales: 15 },
+    { book: "农业科技创新", sales: 12 },
+    { book: "农业产业链优化", sales: 10 },
+    { book: "农业品牌建设", sales: 8 },
+    { book: "农业旅游开发", sales: 7 },
+    { book: "农业社区发展", sales: 6 },
+    { book: "农业社会服务", sales: 5 },
+    { book: "农业标准化建设", sales: 4 },
+    { book: "农业质量认证", sales: 3 },
+    { book: "农业知识产权保护", sales: 2 }
+];
+
+
+  // 预定义的颜色调色板
+  var colorPalette = ['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728', '#9467bd', '#8c564b', '#e377c2', '#7f7f7f', '#bcbd22', '#17becf'];
+
+  function updateTable(data) {
+    var tableBody = document.getElementById("table-body");
+    tableBody.innerHTML = "";
+    var totalSales = data.reduce(function(sum, item) {
+      return sum + item.sales;
+    }, 0);
+
+    // 对数据按销量进行排序
+    data.sort(function(a, b) {
+      return b.sales - a.sales;
+    });
+
+    // 添加排序的 SVG 图表
+    data.forEach(function(item, index) {
+      var marketShare = ((item.sales / totalSales) * 100).toFixed(2);
+      var textColor = colorPalette[index % colorPalette.length]; // 使用颜色调色板
+      var svgColumn = "<td><svg width='25' height='15'><text x='5' y='15' fill='" + textColor + "'>" + (index + 1) + "</text></svg></td>";
+      var tableRow = "<tr style='height: 30px;'><td style='width: 20px;'>" + svgColumn + "</td><td style='width: 250px;'>" + item.book + "</td><td style='width: 23%;'>" + item.sales + "</td><td style='width: 20%;'>" + marketShare + "%</td></tr>";
+      tableBody.innerHTML += tableRow;
+    });
+  }
+
+  // 选择表格
+  function selectTable(tableNumber) {
+    if (tableNumber === 1) {
+      updateTable(tableData1);
+    } else if (tableNumber === 2) {
+      updateTable(tableData2);
+    } else if (tableNumber === 3) {
+      updateTable(tableData3);
+    }
+  }
+
+  // 页面加载时初始化表格
+  window.onload = function() {
+    // 默认显示表格1
+    selectTable(1);
+  };
+</script>
+<script type="text/javascript" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+<<script>
+  var chartDom = document.getElementById('main');
+  var myChart = echarts.init(chartDom);
+  var option;
+
+  option = {
+    color: ['#80FFA5', '#00DDFF', '#37A2FF', '#FF0087', '#FFBF00'],
+    title: {
+      text: '农业生态园作物产量情况',
+      left: '5%'
+    },
+    tooltip: {
+      trigger: 'axis',
+      axisPointer: {
+        type: 'cross',
+        label: {
+          backgroundColor: '#6a7985'
+        }
+      }
+    },
+    legend: {
+      data: ['小麦', '玉米', '大豆', '水稻', '蔬菜']
+    },
+    toolbox: {
+      feature: {
+        saveAsImage: {}
+      }
+    },
+    grid: {
+      left: '3%',
+      right: '4%',
+      bottom: '3%',
+      containLabel: true
+    },
+    xAxis: [
+      {
+        type: 'category',
+        boundaryGap: false,
+        data: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul']
+      }
+    ],
+    yAxis: [
+      {
+        type: 'value'
+      }
+    ],
+    series: [
+      {
+        name: '小麦',
+        type: 'line',
+        stack: 'Total',
+        smooth: true,
+        lineStyle: {
+          width: 0
+        },
+        showSymbol: false,
+        areaStyle: {
+          opacity: 0.8,
+          color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+            {
+              offset: 0,
+              color: 'rgb(128, 255, 165)'
+            },
+            {
+              offset: 1,
+              color: 'rgb(1, 191, 236)'
+            }
+          ])
+        },
+        emphasis: {
+          focus: 'series'
+        },
+        data: [120, 200, 150, 220, 180, 250, 200]
+      },
+      {
+        name: '玉米',
+        type: 'line',
+        stack: 'Total',
+        smooth: true,
+        lineStyle: {
+          width: 0
+        },
+        showSymbol: false,
+        areaStyle: {
+          opacity: 0.8,
+          color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+            {
+              offset: 0,
+              color: 'rgb(0, 221, 255)'
+            },
+            {
+              offset: 1,
+              color: 'rgb(77, 119, 255)'
+            }
+          ])
+        },
+        emphasis: {
+          focus: 'series'
+        },
+        data: [100, 180, 130, 200, 160, 230, 180]
+      },
+      {
+        name: '大豆',
+        type: 'line',
+        stack: 'Total',
+        smooth: true,
+        lineStyle: {
+          width: 0
+        },
+        showSymbol: false,
+        areaStyle: {
+          opacity: 0.8,
+          color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+            {
+              offset: 0,
+              color: 'rgb(55, 162, 255)'
+            },
+            {
+              offset: 1,
+              color: 'rgb(116, 21, 219)'
+            }
+          ])
+        },
+        emphasis: {
+          focus: 'series'
+        },
+        data: [150, 220, 180, 250, 210, 280, 220]
+      },
+      {
+        name: '水稻',
+        type: 'line',
+        stack: 'Total',
+        smooth: true,
+        lineStyle: {
+          width: 0
+        },
+        showSymbol: false,
+        areaStyle: {
+          opacity: 0.8,
+          color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+            {
+              offset: 0,
+              color: 'rgb(255, 0, 135)'
+            },
+            {
+              offset: 1,
+              color: 'rgb(135, 0, 157)'
+            }
+          ])
+        },
+        emphasis: {
+          focus: 'series'
+        },
+        data: [180, 250, 210, 280, 240, 310, 250]
+      },
+      {
+        name: '蔬菜',
+        type: 'line',
+        stack: 'Total',
+        smooth: true,
+        lineStyle: {
+          width: 0
+        },
+        showSymbol: false,
+        label: {
+          show: true,
+          position: 'top'
+        },
+        areaStyle: {
+          opacity: 0.8,
+          color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+            {
+              offset: 0,
+              color: 'rgb(255, 191, 0)'
+            },
+            {
+              offset: 1,
+              color: 'rgb(224, 62, 76)'
+            }
+          ])
+        },
+        emphasis: {
+          focus: 'series'
+        },
+        data: [160, 230, 190, 260, 220, 290, 230]
+      }
+    ]
+  };
+
+  option && myChart.setOption(option);
+
+</script>
+</body>
+
+</html>

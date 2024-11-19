@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>高级轮播图示例</title>
+    <!-- 引入 Swiper 的 CSS 文件 -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>旅游地域</title>
+    <link rel="stylesheet" href="../css/map.css">
+    <link rel="stylesheet" href="../css/menu.css">
+    <style>       #wai {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .swiper-slide {
+        width: 100%;
+        height: 158vh; /* 使用视口高度 */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 24px;
+        text-align: center;
+        background-size: cover;
+        background-position: center;
+    }
+
+
+    .swiper-pagination {
+        bottom: 10px;
+        text-align: center;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        color: white;
+        font-size: 24px;
+    }
+
+    #bigbox {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 10; /* 确保 #bigbox 在轮播图之上 */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+    </style>
+    <body>
+        <!-- menu -->
+        <nav>
+            <div class="logo">
+                <img src="../image/kappframework-QqjNLN(1)(1).png" alt="Logo Image">
+            </div>
+            <div class="hamburger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html" style="color: black;">网站首页</a></li>
+                <li><a href="../layout/map.html" style="color: black;">生态园地图</a></li>
+                <li><a href="../layout/test.html" style="color: black;">生态园数据平台</a></li>
+                 <li><a href="../layout/about.html" style="color: black;">欢迎加入</a></li>
+            </ul>
+        </nav>
+        <!-- 旋转图 -->
+
+        <div id="wai" class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image: url('../image/微信图片_20241119174145.jpg');"></div>
+                <div class="swiper-slide" style="background-image: url('../image/微信图片_20241119174158.jpg');"></div>
+                <div class="swiper-slide" style="background-image: url('../image/微信图片_20241119174219.jpg');"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div id="bigbox">
+                <div class="box">
+                    <div style="--i:1"><img src="../image/图片1.png"></div>
+                    <div style="--i:5"><img src="../image/微信图片_20241119230211.jpg"></div>
+                    <div style="--i:6"><img src="../image/图片6.jpg"></div>
+                    <div style="--i:8"><img src="../image/微信图片_20241119231056.png"></div>
+                    <div style="--i:7"><img src="../image/图片7.png"></div>
+                    <div style="--i:2"><img src="../image/图片8.png"></div>
+                    <div style="--i:3"><img src="../image/图片3.png"></div>
+                    <div style="--i:4"><img src="../image/图片4.png"></div>
+                    <h1>农业生态园</h1>
+                </div>
+            </div>
+        </div>
+        <!-- 地域选择球 -->
+        <header class="section-header wow fadeInUp" style="visibility: visible; animation-name: fadeInUp; margin-top: 20px;">
+            <h3>生态园地图</h3>
+            <p>前往一探究竟吧！</p>
+        </header>
+
+        <div class="beij">
+            <div class="ly" style="display: inline-block; margin-left: 250px; margin-top: 20px;">
+    <div class="chose_up">
+        <p onclick="openImage('../image/图片1.png')">城芯绿地</p>
+    </div>
+    <div class="chose_low">
+        <img src="../image/图片1.png" style="width: 100%;">
+    </div>
+</div>
+
+            <div class="ly">
+                <div class="chose_up2" style="background-color: skyblue;">
+                     <p onclick="openImage('../image/微信图片_20241119231056.png')">农耕体验基地</p>
+                </div>
+                <div class="chose_low2">
+                    <img src="../image/微信图片_20241119231056.png" style="width: 100%;">
+                </div>
+            </div>
+
+            <div class="ly">
+                <div class="chose_up" style="background-color: grey;">
+                    <p onclick="openImage('../image/图片3.png')">安全教育基地</p>
+                </div>
+                <div class="chose_low">
+                    <img src="../image/图片3.png" style="width: 100%;">
+                </div>
+            </div>
+
+            <div class="ly">
+                <div class="chose_up2" style="background-color: pink;">
+                    <p onclick="openImage('../image/图片4.png')">住宿区</p>
+                </div>
+                <div class="chose_low2">
+                    <img src="../image/图片4.png" style="width: 100%;">
+                </div>
+            </div>
+
+            <div class="ly" style="display: inline-block; margin-left: 250px; margin-top: 20px;">
+
+            <div class="chose_up2" style="background-color: purple;">
+                <p onclick="openImage('../image/微信图片_20241119230211.jpg')">餐饮区</p>
+                </div>
+                <div class="chose_low2">
+                    <img src="../image/微信图片_20241119230211.jpg" style="width: 100%;">
+                </div>
+            </div>
+
+            <div class="ly" style="display: inline-block; margin-left: 250px; margin-top: 20px;">
+
+            <div class="chose_up" style="margin-left: 150px;background-color: rgb(83, 97, 6);">
+                 <p onclick="openImage('../image/图片6.jpg')">动物园</p>
+                </div>
+                <div class="chose_low" style="margin-left: 150px">
+                    <img src="../image/图片6.jpg" style="width: 100%;">
+                </div>
+            </div>
+
+            <div class="ly" style="display: inline-block; margin-left: 300px; margin-top: 20px;">
+            <div class="chose_up" style="background-color:rgb(9, 143, 114);">
+                   <p onclick="openImage('../image/图片8.png')">军训基地</p>
+
+                </div>
+                <div class="chose_low">
+                    <img src="../image/图片8.png" style="width: 100%;">
+                </div>
+            </div>
+
+            <div class="ly" style="display: inline-block; margin-left: 950px; margin-top: 20px;">
+                <div class="chose_up" style="background-color:rgb(19, 119, 201);">
+                       <p onclick="openImage('../image/图片7.png')">手工工坊</p>
+                </div>
+                <div class="chose_low">
+                    <img src="../image/图片7.png" style="width: 100%;">
+                </div>
+            </div>
+
+        </div>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+        <!-- 初始化 Swiper 轮播图 -->
+        <script>        document.addEventListener('DOMContentLoaded', function () {
+            var swiper = new Swiper('#wai', {
+                loop: true,
+                speed: 600,
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev'
+                },
+                effect: 'fade',
+                fadeEffect: {
+                    crossFade: true
+                }
+            });
+        });
+        </script>
+<script>
+function openImage(imageSrc) {
+    var newWindow = window.open('', '_blank');
+    newWindow.document.write(`
+        <html>
+        <head>
+            <title>图片查看器</title>
+            <style>
+                body {
+                    margin: 0;
+                    padding: 0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 100vh;
+                    background-color: #f0f0f0;
+                }
+                img {
+                    max-width: 100%;
+                    max-height: 100%;
+                }
+                .back-button {
+                    position: absolute;
+                    top: 10px;
+                    left: 10px;
+                    padding: 10px 20px;
+                    background-color: #007bff;
+                    color: white;
+                    border: none;
+                    cursor: pointer;
+                    font-size: 16px;
+                }
+            </style>
+        </head>
+        <body>
+            <button class="back-button" onclick="window.close()">返回</button>
+            <img src="${imageSrc}" alt="图片">
+        </body>
+        </html>
+    `);
+    newWindow.document.close();
+}
+</script>
+
+    </body>
+
+</html>
