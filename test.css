@@ -1,0 +1,248 @@
+* {
+    margin: 0px;
+    border: 0;
+    cursor: url("../image/hand.png"), default;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+ ::-webkit-scrollbar-corner {
+    background-color: transparent;
+}
+
+ ::-webkit-scrollbar-thumb {
+    background-color: #49b1f5;
+    background-image: -webkit-linear-gradient(45deg, hsla(0, 0%, 100%, .4) 25%, transparent 0, transparent 50%, hsla(0, 0%, 100%, .4) 0, hsla(0, 0%, 100%, .4) 75%, transparent 0, transparent);
+    border-radius: 2em;
+}
+
+ ::-webkit-scrollbar-track {
+    background-color: rgba(73, 177, 245, .2);
+    border-radius: 2em;
+}
+
+#aboutbj {
+    height: 100vh;
+    background-image: url("../image/乡村振兴3.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.post.news.top {
+    padding-top: 10px;
+}
+
+.post.news {
+    width: 1260px;
+}
+
+.post.news .PostNews {
+    margin-right: -20px;
+}
+
+div,
+ul {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+.post.news li {
+    width: calc(100% / 4 - 20px);
+    height: 440px;
+    float: left;
+    margin: 15px 20px 15px 0;
+    padding: 0;
+}
+
+.imgBox {
+    margin-top: 0;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+}
+
+.imgBox:hover {
+    height: 350px;
+    overflow: hidden;
+}
+
+a {
+    color: #212121;
+    text-decoration: none;
+    font-size: 1.3em;
+}
+
+.post.news {
+    margin-top: 50px;
+    padding-left: 90px;
+    padding-right: 50px;
+}
+
+.imgBox:after {
+    content: '';
+    display: block;
+    padding-top: 72%;
+}
+
+.PostNews li img {
+    position: absolute;
+    float: left;
+    top: 0;
+    left: 0;
+}
+
+.post.news .PostNews .imgBox:after {
+    content: '';
+    display: block;
+    padding-top: 72%;
+}
+
+.post.news li:hover .imgText {
+    background: #F4CE58;
+}
+
+.post.news li .imgText {
+    text-align: left;
+    background: #f6f5f5;
+    padding: 15px 15px 35px 15px;
+    position: relative;
+}
+
+.post.news .imgText h4 {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 0px 0 5px;
+    overflow: hidden;
+    margin: 0 2em 0;
+}
+
+.post li h4 {
+    overflow: hidden;
+    clear: both;
+    margin: 0 0 5px;
+    font-size: 16px;
+    font-weight: normal;
+    padding: 0 20px;
+    color: #333;
+}
+
+.post.news .imgText p {
+    height: 34px;
+    padding: 0px;
+    font-size: 12px;
+    color: rgb(119, 115, 115);
+    overflow: hidden;
+}
+
+.time {
+    float: left;
+    left: 15;
+    bottom: 12px;
+    height: 12px;
+    line-height: 12px;
+}
+
+.right {
+    float: left;
+    margin-top: 70px;
+    padding-left: 250px;
+    width: 32px;
+    height: 50px;
+    background-image: url("../image/right.svg");
+}
+
+.right:hover {
+    float: left;
+    padding-left: 250px;
+    width: 40px;
+    height: 50px;
+}
+ .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 4px;
+            box-shadow: 0 0 6px rgba(0,0,0,.15);
+        }
+   .vertical-container {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+    }
+
+ .table-wrapper {
+  position: relative; /* 设置相对定位 */
+  overflow-x: auto; /* 水平滚动 */
+  overflow-y: auto; /* 垂直滚动 */
+  width: 637px; /* 固定宽度 */
+  height: 713px; /* 固定高度 */
+  margin-top: 20px; /* 向下偏移 */
+  margin-left: -5px; /* 向左偏移 */
+  border-radius: 5px; /* 圆角 */
+}
+.table-wrapper {
+  margin-top: 20px; /* 增加表格与按钮组之间的距离 */
+}
+
+#data-table tr {
+  height: 40px; /* 增加行高 */
+}
+
+#data-table td {
+  padding: 10px; /* 增加单元格内边距 */
+}
+
+button {
+  padding: 10px 20px; /* 调整内边距，控制按钮大小 */
+  background-color: #8B9467; /* 更符合生态园主题的背景色 */
+  color: #ffffff; /* 按钮文字颜色 */
+  border: none;
+  border-radius: 8px; /* 增大圆角半径 */
+  cursor: pointer;
+  font-size: 21px; /* 控制字体大小，进而影响按钮大小 */
+  transition: background-color 0.3s ease; /* 添加过渡效果 */
+  margin-top: 14px; /* 增加上边距 */
+}
+
+
+button:hover {
+  background-color: #6C7A4D; /* 鼠标悬停时的背景色变化 */
+}
+
+button:active {
+  background-color: #525F3D; /* 鼠标点击时的背景色变化 */
+}
+    #chat-history p {
+      margin: 5px 0;
+    }
+        .btn-group .btn {
+      color: black;
+    }
+
+    /* 设置表格文本颜色为黑色 */
+    .table-wrapper table, .table-wrapper th, .table-wrapper td {
+      color: black;
+    }
+#main {
+    width: 1965px;
+    height: 490px;
+    position: relative;
+    top: 90px;
+    left: 10px;
+    background-color: white;
+    z-index: 1;
+    border: 2px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+}
